@@ -8,11 +8,11 @@ Package.describe({
 
 Package.onUse(function (api) {
   // Minimum Meteor version
-  api.versionsFrom('METEOR@0.9.0');
+  api.versionsFrom('METEOR@1.6.1');
 
   // Meteor dependencies
   api.use('check');
-  api.use('coffeescript');
+  api.use('coffeescript@2.0.0');
   api.use('underscore');
   api.use('accounts-password@1.3.3');
   api.use('simple:json-routes@2.1.0');
@@ -33,7 +33,7 @@ Package.onTest(function (api) {
   api.use('test-helpers');
   api.use('nimble:restivus');
   api.use('http');
-  api.use('coffeescript');
+  api.use('coffeescript@2.0.0');
   api.use('underscore');
   api.use('accounts-base');
   api.use('accounts-password');
